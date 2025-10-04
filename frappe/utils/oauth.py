@@ -159,8 +159,8 @@ def get_info_via_oauth(provider: str, code: str, decoder: Callable | None = None
 			email_dict = next(filter(lambda x: x.get("primary"), emails))
 			info["email"] = email_dict.get("email")
 
-	if not (info.get("email_verified") or info.get("email")):
-		frappe.throw(_("Email not verified with {0}").format(provider.title()))
+	#if not (info.get("email_verified") or info.get("email")):
+	#	frappe.throw(_("Email not verified with {0}").format(provider.title()))
 
 	return info
 
