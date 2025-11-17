@@ -41,9 +41,6 @@ body {
 			}
 		}
 
-		.page-card-actions {
-			margin-top: var(--margin-lg);
-		}
 
 		.page-card-body {
 			::placeholder, /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -136,11 +133,9 @@ body {
 			}
 
 			.social-logins {
-				margin-top: var(--margin-md);
 				@include get_textstyle("base", "regular");
 
 				.social-login-buttons {
-					margin-top: var(--margin-md);
 
 					.login-button-wrapper {
 						@include media-breakpoint-up(md) {
